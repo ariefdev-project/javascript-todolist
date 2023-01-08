@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282a36;
+  color: white;
+}
+.container {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+h1 {
+  font-family: "Kanit";
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  box-shadow: 1px 2px 3px grey;
+  padding: 8px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+#buttonAdd {
+  border: 0;
+  padding: 3px;
+  width: 80px;
+  height: 32px;
+  border: 1.5px solid #0068ff;
+  border-radius: 6px;
+  background: transparent;
+  color: white;
+  font-family: "Mulish";
+  position: relative;
+  z-index: 2;
+  margin-right: 3px;
+}
+
+input {
+  height: 30px;
+  outline: none;
+  border: none;
+  padding-left: 8px;
+  background: transparent;
+  border-bottom: 2px solid red;
+  width: 80%;
+  color: white;
+  font-family: "Mulish";
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+  margin: auto;
+}
+
+li {
+  width: 80%;
+  height: 55px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 1px 2px 3px #00ffdc;
+  border-radius: 2px;
+  margin: 20px auto;
+  padding: 8px;
+  font-family: "Mulish";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span {
+  text-align: center;
+}
+.bIcon {
+  border: 0;
+  padding: 8px;
+  height: 32px;
+  border: 1.5px solid #0068ff;
+  border-radius: 6px;
+  background: transparent;
+  color: #0068ff;
+  font-family: "Mulish";
+  margin-right: 3px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 1000px) {
+  input {
+    width: 500px;
+  }
+  form {
+    width: 500px;
+  }
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  font-family: "Mulish";
+  -webkit-box-shadow: 0 0 0px 1000px #282a36 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
