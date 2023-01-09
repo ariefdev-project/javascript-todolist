@@ -56,7 +56,9 @@ document.forms["todo-form"].onsubmit = function (event) {
   event.preventDefault();
 
   const input = document.forms["todo-form"]["add"].value;
-  todolist.push(input);
+  if (input.trim() !== "") {
+    todolist.push(input);
+  }
 
   displayTodolist();
 
